@@ -10,16 +10,14 @@
 </head>
 
 <body>
-
-
     <script>
-        var n = ["1", "2", "3"];
-        var m = ["4", "5", "6"];
-        document.write("<table border = '1'; width = '100px'; height = '100px';             style='border-collapse: collapse;>'");
+        var n = ["img/1.jpg", "img/2.jpg", "img/3.jpg"];
+        var m = ["img/4.jpg", "img/5.jpg", "img/6.jpg"];
+        document.write("<table border = '1'; width = '100px'; style='border-collapse: collapse;>'");
         for (i = 0; i < n.length; i++) {
             document.write("<tr>");
-            document.write("<td>" + '<img src="1.jpg">' + "</td>");      //n[i]
-            document.write("<td>" + '<img src="2.jpg">' + "</td>");      //m[i]
+            document.write("<td>" + "<img src=" + n[i] + ">" + "</td>");
+            document.write("<td>" + "<img src=" + m[i] + ">" + "</td>");
             document.write("<tr>");
         };
         document.write("</table>");
